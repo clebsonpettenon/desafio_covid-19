@@ -4,10 +4,11 @@ body{
 nav{
     display: flex;
     background-color: orange;
-    height: 50px;
+    height: 70px;
     justify-content: center;
     align-items: center;
     font-family: helvetica;
+    border-bottom: 2px solid gray;
 }
 a{
     color: black;
@@ -29,24 +30,27 @@ nav a{
 nav a:hover{
     background-color: black;
     color: orange;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 27px 10px;
 }
 .container{
     width: 900px;
     margin: 0 auto;
     padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
-section{
-    font-family: Arial;
+.container a p:hover, .container a h2:hover{
+    color: gray;
 }
 .noticia{
-    display: flex;
+    font-family: Arial;
+    width: 280px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .noticia img{
-    width: 300px;
+    width: 280px;
     height: auto;
-    margin-right: 20px;
 }
 hr{
     border: 1px solid gray;

@@ -3,60 +3,117 @@ body{
 }
 nav{
     display: flex;
-    background-color: orange;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
     height: 70px;
     justify-content: center;
     align-items: center;
     font-family: helvetica;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #FFF;
+}
+.logo{
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
 }
 a{
-    color: black;
     text-decoration: none;
 }
 p{
     line-height: 20px;
 }
-nav img{
-    width: auto;
-    height: 45px;
-}
 nav a{
-    margin-left: 30px;
+    margin-left: 25px;
     padding: 10px;
     text-transform: lowercase;
     font-weight: bold;
+    color: orange;
 }
 nav a:hover{
-    background-color: black;
-    color: orange;
+    background-color: orange;
+    color: #000;
     padding: 27px 10px;
 }
-.container{
+.container-geral{
     width: 900px;
     margin: 0 auto;
-    padding: 30px;
+}
+.banner img{
+    width: 880px;
+    height: auto;
+}
+.container-noticia{
     display: flex;
     flex-wrap: wrap;
 }
-.container a p:hover, .container a h2:hover{
+.container-noticia a p:hover{
     color: gray;
+}
+.container-noticia a h3:hover{
+    color: orange;
 }
 .noticia{
     font-family: Arial;
     width: 280px;
-    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 .noticia img{
     width: 280px;
     height: auto;
 }
+.noticia h3{
+    background-color: #1a0500;
+    color: white;
+    padding: 8px;
+}
 hr{
-    border: 1px solid gray;
+    border: 1px solid orange;
+}
+h2{
+    background-color: orange;
+    padding: 5px;
+    text-align: center;
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+}
+.sobre h3{
+    text-align: center;
+}
+.sobre img{
+    width: 200px;
+    height: auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form input{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 17px;
+}
+.form button{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: orange;
+    color: black;
 }
 footer{
-    background-color: black;
+    background-color: #000;
     height: 100px;
+    margin-top: 200px;
 
 }
